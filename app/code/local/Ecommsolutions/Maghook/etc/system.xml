@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <ecommsolutions translate="label" module="maghook">
+            <label>ECommSolutions Hooks</label>
+            <sort_order>101</sort_order>
+        </ecommsolutions>
+    </tabs>
+    <sections>
+        <ecommsolutions translate="label" module="maghook">
+            <label>Setting</label>
+            <tab>ecommsolutions</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <ecommsolutions_group translate="label" module="maghook">
+                    <label>Webhook setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<comment>
+					</comment>
+					<expanded>1</expanded>
+                    <fields>
+						<aa_is_enabled translate="label">
+                            <label>Enable hook event: </label>
+                            <comment>Select Yes/No</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </aa_is_enabled>
+                        <aa_cart_change translate="label">
+                            <label>Cart change hook: </label>
+                            <comment>This will send request on cart change(product/qty change in cart)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><aa_is_enabled>1</aa_is_enabled></depends>
+                        </aa_cart_change>
+						<aa_sales_change translate="label">
+                            <label>Order hook: </label>
+                            <comment>This will send request on order </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><aa_is_enabled>1</aa_is_enabled></depends>
+                        </aa_sales_change>
+						<aa_shipping_hook translate="label">
+                            <label>Order shipment hook: </label>
+                            <comment>This will send request on every shipment</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><aa_is_enabled>1</aa_is_enabled></depends>
+                        </aa_shipping_hook>
+						<aa_customer_signup translate="label">
+                            <label>Customer signup hook: </label>
+                            <comment>This will send request on every customer signup</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><aa_is_enabled>1</aa_is_enabled></depends>
+                        </aa_customer_signup>
+                    </fields>
+                </ecommsolutions_group>
+            </groups>
+        </ecommsolutions>
+    </sections>
+</config>

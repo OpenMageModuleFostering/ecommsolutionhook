@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>ECommSolutionHook</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Apache  - ASL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Correct your app with Magento via EcommSolution Hooks</summary>
+    <description>This extension provide you to specify webhook for cart change, purchase, shipment and new user signup. &#xD;
+&#xD;
+You can setup webhook for them and capture request in realtime , that can connect/notify your App.</description>
+    <notes>Initial release of ECommSolution Hooks</notes>
+    <authors><author><name>ECommSolution</name><user>ECommSolution</user><email>AA.Systems@outlook.com</email></author></authors>
+    <date>2015-07-01</date>
+    <time>18:38:40</time>
+    <contents><target name="magelocal"><dir name="Ecommsolutions"><dir name="Maghook"><dir name="etc"><file name="config.xml" hash="0949995a66d27bea14370e709f061ff6"/><file name="system.xml" hash="64321d0a30af190f149d08c881a8b380"/></dir><dir name="Helper"><file name="Data.php" hash="beb2dcf81f3bfe397551e650e1af63a2"/></dir><dir name="Model"><file name="Observer.php" hash="f360735e643816c6b47ad49740e1e37c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ecommsolutions_Maghook.xml" hash="38f30e07964db6075fb64597e43ea883"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
