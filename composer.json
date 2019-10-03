@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ECommSolutionHook",
+    "name": "OpenMageModuleFostering\/ECommSolutionHook",
     "type": "magento-module",
     "license": "Apache----ASL",
     "homepage": "",
     "description": "Correct your app with Magento via EcommSolution Hooks",
     "authors": [
-    {
-        "name": "ECommSolution",
-        "email": "AA.Systems@outlook.com"
-    }
-],
+        {
+            "name": "ECommSolution",
+            "email": "AA.Systems@outlook.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
